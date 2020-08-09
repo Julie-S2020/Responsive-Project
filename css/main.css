@@ -132,11 +132,21 @@ p {
 }
  
 img {
- 
+  width: 100%;
 }
  
 figure {
+  margin: 0;
  
+  
+}
+/* Stopped here on 8.8.20 */
+/* header img {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; */
 }
  
 address {
@@ -253,6 +263,11 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #333333;
 }
 
 /* Aside */
@@ -272,6 +287,10 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .features h2 {
@@ -540,6 +559,7 @@ header nav ul {
   font-size: 3em;
   line-height: 1;
   margin: 0;
+}
 
 /* Aside */
 aside .content-wrapper {
