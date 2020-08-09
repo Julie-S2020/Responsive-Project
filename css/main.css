@@ -141,12 +141,9 @@ figure {
   
 }
 /* Stopped here on 8.8.20 */
-/* header img {
+ img {
   width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap; */
+
 }
  
 address {
@@ -186,7 +183,13 @@ header .content-wrapper {
   margin: 0;
 }
 
-
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 .header-divider {
   width: 100%;
@@ -268,6 +271,14 @@ footer .social-icons p {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #333333;
+  min-height: 500px;
+}
+
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif; 
+  font-weight: 500; 
+  line-height: 1.2; 
 }
 
 /* Aside */
@@ -279,6 +290,10 @@ aside {
   flex-flow: row wrap;
   background: #527158;
   
+}
+
+aside .form{
+  margin-top: 30px;
 }
 
 /* Features */
@@ -603,7 +618,8 @@ aside .content-wrapper .form {
   width: 85%;
 }
 
-.reviews article div {
+.reviews article div
+.reviews article figure, {
     width: 49%;        
 }
 
@@ -665,6 +681,10 @@ footer .copyright {
       justify-content: space-between;
       align-items: flex-start;
     }
+
+    .contact-content h4 {
+      font-size: 1.5em;
+    }
   
     /* ==========================================================================
      FAQ Page
@@ -681,6 +701,12 @@ footer .copyright {
     .faq h2 {
       width: 100%;
     }
+    
+  .faq-content h4,
+  .faq-content p {
+      font-size: .875em;
+      line-height: 1.125;
+  }
   }
 
 
@@ -712,7 +738,7 @@ footer .copyright {
   
     /* Hero */
     .hero-area h1 {
-      width: 60%;
+      width: 80%;
       font-size: 3.75em;
   }
   
@@ -773,6 +799,7 @@ footer .copyright {
     ========================================================================== */
     .faq-section h2 {
       width: 100%;
+      font-size: 3em;
     }
 
     .faq-section h4,
