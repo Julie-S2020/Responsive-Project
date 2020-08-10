@@ -672,6 +672,11 @@ input[type=button] {
     footer .copyright {
       width: 100%;
     }
+
+    footer .social-icons {
+      width: 12.5em;
+      justify-content: space-between;
+    }
   
     /* ==========================================================================
      About Page
