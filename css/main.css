@@ -132,18 +132,13 @@ p {
 }
  
 img {
-  width: 100%;
+  width: 60%;
 }
  
 figure {
   margin: 0;
  
   
-}
-/* Stopped here on 8.8.20 */
- img {
-  width: 60%;
-
 }
  
 address {
@@ -213,11 +208,14 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%; 
+  /* padding-left: 0; */
   
 }
 
 header nav ul li {
   font-size: 1.125em;
+  padding-right: 90px;
+  
 }
 
 footer {
@@ -354,14 +352,18 @@ aside .form{
 
 }
 
-.reviews h3 {
-  margin-bottom: 40px;
+.reviews h2 {
+  /* margin: 40px; */
   line-height: 1em;
 }
 
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
+}
+
+.reviews img {
+  margin-bottom: 20px;
 }
 
 /* ==========================================================================
@@ -374,6 +376,29 @@ aside .form{
   align-items: center;
   flex-flow: row wrap;
   background: #527158;
+}
+
+.mission-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.map figure {
+  width: 100%;
+  height: 0; 
+  padding-bottom: 125%; 
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
 }
 
 .contact-section {
@@ -570,11 +595,11 @@ input[type=button] {
     }
   
     header nav {
-      width: 20%;
+      width: 100%;
     }
   
     header nav ul {
-      justify-content: space-between;
+      justify-content: center;
     }
   
     .header-divider {
@@ -720,7 +745,7 @@ input[type=button] {
     }
   
     .faq-content {
-      flex-basis: 45%;
+      flex-basis: auto;
     }
   
     .faq h2 {
@@ -771,7 +796,7 @@ input[type=button] {
   
     aside .content-wrapper .form-description,
     aside .content-wrapper .form {
-      width: 40%;
+      width: 30%;
     }
   
     .form-description p {
@@ -821,15 +846,19 @@ input[type=button] {
     /* ==========================================================================
     FAQ Page
     ========================================================================== */
-    .faq h2 {
+    .faq-content h2 {
       width: 100%;
       font-size: 3em;
     }
       
-    .faq h4,
-    .faq p {
+    .faq-content h4,
+    .faq-content p {
         font-size: 1.125em;
         line-height: 1;
+    }
+
+    .faq-content {
+      flex-basis: auto;
     }
   }
   
